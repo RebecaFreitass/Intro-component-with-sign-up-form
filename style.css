@@ -32,7 +32,7 @@ main{
     align-items: center;
     justify-content: center;
     width: 80vw;
-    margin: auto;
+    margin: 6rem auto ;
     gap: 1rem;
 }
 
@@ -53,17 +53,26 @@ article p{
     width: 37vw;
     font-size: 0.9rem;
 }
-#purple-buttton{
-
+#purple-buttton{ 
+ width: 25vw;
+ padding: 0.8rem ;
+ font-family: "poppins-500";
+ font-size: 0.7rem;
+ border-radius: 0.5rem;
+ border: none;
+ background-color: hsl(248, 32%, 49%) ;
+ color: white;
+ margin-bottom: 1rem;
 }
 form{
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 2rem;
     gap: 1rem;
     border-radius: 0.5rem;
     width: 25vw;
+    font-family: "poppins-500";
 }
 .input-design{
     border: 1px solid rgba(0, 0, 0, 0.205);
@@ -76,8 +85,18 @@ form{
     border: none;
     border-bottom: 3px solid hsl(154, 58%, 41%) ;
     border-radius: 0.5rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.928);
     text-transform: uppercase;
-    font-family: "poppins-500";
     cursor: pointer;
+}
+#advice-form{
+    font-size: 0.5rem;
+    color: rgba(0, 0, 0, 0.55);
+}
+#terms-link{
+    text-decoration: none;
+    color: red;
+}
+#terms-link:hover{
+    text-decoration: underline;
 }
