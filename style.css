@@ -54,5 +54,30 @@ article p{
     font-size: 0.9rem;
 }
 #purple-buttton{
-    
+
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    width: 25vw;
+}
+.input-design{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+#btn-grenn{
+    padding: 0.6rem;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-bottom: 3px solid hsl(154, 58%, 41%) ;
+    border-radius: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: "poppins-500";
+    cursor: pointer;
 }
