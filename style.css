@@ -64,6 +64,10 @@ article p{
  color: white;
  margin-bottom: 1rem;
 }
+#btn-purple-clear{
+    font-family: "poppins-400";
+    color: rgba(255, 255, 255, 0.609);
+}
 form{
     background-color: white;
     display: flex;
@@ -73,11 +77,45 @@ form{
     border-radius: 0.5rem;
     width: 25vw;
     font-family: "poppins-500";
+    position: relative;
 }
+
 .input-design{
     border: 1px solid rgba(0, 0, 0, 0.205);
     padding: 0.8rem;
     border-radius: 0.5rem;
+    width: 20vw;
+}
+svg{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+#svg1{
+    right: 3rem;
+    top: 1.5rem;
+}
+#svg2 {
+    right: 3rem;
+    top: 6.5rem;
+}
+#svg3 {
+    right: 3rem;
+    top: 11.5rem;
+}
+#svg4 {
+    right: 3rem;
+    top: 16.4rem;
+}
+.error-text{
+    font-size: 0.7rem;
+    color: red;
+    display: flex;
+    justify-content: right;
+    margin-top: -0.8rem;
+    margin-right: 0.3rem;
+    font-family: "poppins-400";
+    display: none;
 }
 #btn-grenn{
     padding: 0.6rem;

@@ -21,13 +21,21 @@
       </p>
     </article>
   <section>
-      <button id="purple-buttton">Try it free 7 days then $20/mo. thereafter</button>
-      <form action="">
-        <input type="text" placeholder="First Name" class="input-design"></input>
-        <input type="text" id="last-name" placeholder="Last Name" class="input-design" ></input>
-        <input type="email" id="email" placeholder="Email Address" class="input-design"></input>
-        <input type="password" name="" id="password" placeholder="Password" class="input-design"></input>
-        <input type="button" id="btn-grenn" value="Claim your free trial"></input>
+      <button id="purple-buttton">Try it free 7 days <span id="btn-purple-clear">then $20/mo. thereafter</span></button>
+      <form action="" id="form">
+        <input type="text" placeholder="First Name" class="input-design required" oninput="nameValidate()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="red" width="1.5rem" id="svg1"  class="svgs-error"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"/></svg></input>
+        <span class="error-text">First name cannot be empty</span>
+
+        <input type="text" id="last-name" placeholder="Last Name" class="input-design required" oninput="lastNameValidate()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="red" width="1.5rem" id="svg2" class="svgs-error"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"/></svg></input>
+        <span class="error-text">Last name cannot be empty</span>
+
+        <input type="email" id="email" placeholder="Email Address" class="input-design required" oninput="emailValidate()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="red" width="1.5rem" id="svg3" class="svgs-error" ><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"/></svg></input>
+        <span class="error-text">Look like this is not an email</span>
+
+        <input type="password" name="" id="password" placeholder="Password" class="input-design required" oninput="passwordValidate()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="red" width="1.5rem" id="svg4"  class="svgs-error"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"/></svg></input>
+        <span class="error-text">Password cannot be empty</span>
+
+        <button type="submit" id="btn-grenn" value="Claim your free trial">Claim your free trial</button>
         <p id="advice-form">By clicking the button, you are agreeing to our <a href="#" id="terms-link">Terms and Services</a></p>
       </form>
   </section>
@@ -40,4 +48,5 @@
     </p>
   </footer>
 </body>
+  <script src="validionForm.js"></script>
 </html>
