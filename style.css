@@ -31,7 +31,7 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 90vw;
     margin: 6rem auto ;
     gap: 1rem;
 }
@@ -54,15 +54,15 @@ article p{
     font-size: 0.9rem;
 }
 #purple-buttton{ 
- width: 25vw;
- padding: 0.8rem ;
- font-family: "poppins-500";
- font-size: 0.7rem;
- border-radius: 0.5rem;
- border: none;
- background-color: hsl(248, 32%, 49%) ;
- color: white;
- margin-bottom: 1rem;
+    width: 21.5rem;
+    padding: 0.8rem ;
+    font-family: "poppins-500";
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: hsl(248, 32%, 49%) ;
+    color: white;
+    margin-bottom: 1rem;
 }
 #btn-purple-clear{
     font-family: "poppins-400";
@@ -75,7 +75,7 @@ form{
     padding: 1rem 2rem;
     gap: 1rem;
     border-radius: 0.5rem;
-    width: 25vw;
+    width: 21.5rem;
     font-family: "poppins-500";
     position: relative;
 }
@@ -84,7 +84,7 @@ form{
     border: 1px solid rgba(0, 0, 0, 0.205);
     padding: 0.8rem;
     border-radius: 0.5rem;
-    width: 20vw;
+    width: 18rem;
 }
 svg{
     position: absolute;
@@ -137,4 +137,76 @@ svg{
 }
 #terms-link:hover{
     text-decoration: underline;
+}
+
+@media(max-width:1180px){
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 95vw;
+        margin: 6rem auto;
+    }
+    article h1{
+        width: 27vw;
+        font-size: 2.3rem;
+    }
+    article p {
+        font-family: "poppins-400";
+        margin-top: 1rem;
+        width: 30vw;
+    }
+
+}
+
+@media (max-width:938px){
+    main{
+        gap: 2rem;
+    }
+    article h1 {
+        width: 30vw;
+    }
+}
+@media (max-width:840px){
+    article h1 {
+        width: 31vw;
+    }
+    article p {
+        width: 33vw;
+    }
+}
+@media (max-width:768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95vw;
+        margin: 6rem auto;
+    }
+    article h1 {
+        font-family: "poppins-700";
+        font-size: 2rem;
+        width: 85vw;
+        font-weight: bold;
+        line-height: 47px;
+        text-align: center;
+    }
+    article p {
+        width: 85vw;
+        text-align: center;
+    }
+}
+
+@media (max-width:375px){
+    #purple-buttton {
+        width: 18.5rem;
+    }
+    form {
+        width: 18.5rem;
+    }
+    .input-design {
+        width: 15rem;
+    }
 }
